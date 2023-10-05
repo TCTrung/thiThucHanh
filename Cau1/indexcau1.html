@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAU 1</title>
+</head>
+<body>
+
+<script>
+    function resuilt() {
+        let arr = [9,7,8,6,10,5,3,4,2];
+        let n = arr.length;
+        for (let i = 0; i < n - 1; i++) {
+            for (let j = i+1; j < n ; j++) {
+                if (arr[j] < arr[i]) {
+                    let max = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = max;
+                }
+            }
+
+        }
+        document.write('Diem lon thu 3 la ' + arr[n - 3]);
+    }
+    resuilt();
+
+</script>
+</body>
+</html>
